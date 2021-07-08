@@ -1,0 +1,88 @@
+.letterhead {
+  margin-left: 60%;
+}
+
+.letterhead .logo {
+  float: right;
+  width: 91px;
+  height: 66px;
+}
+
+.letterhead .sender {
+  margin-right: 35%;
+  text-align: right;
+}
+
+.letterhead .sender .name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.letterhead .sender .address .postal-code .phone {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+
+.recipient .name .address .postal-code {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+
+.header {
+  margin-top: 100px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.message {
+  margin-top: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+
+.table-header {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.table table {
+  width: 100%;
+}
+
+.table thead {
+  background: #4B4B4C;
+}
+
+.table th {
+  text-align: left;
+  width: 50%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+

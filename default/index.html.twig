@@ -1,0 +1,68 @@
+<html>
+  <body>
+    <div class="letterhead">
+      <img class="logo" src="{{ logo }}" />
+      <div class="sender">
+        <div class="name">
+          Aarhus Kommune
+        </div>
+        <div class="address">
+          Hack Kampmanns Plads 2
+        </div>
+        <div class="postal-code">
+          8000 Aarhus C
+        </div>
+        <div class="phone">
+          12 34 56 78
+        </div>
+      </div>
+    </div>
+
+    <div class="recipient">
+      <div class="name">
+          {{ recipient.name }}
+      </div>
+      <div class="address">
+          {{ recipient.streetName }} {{ recipient.streetNumber }} {{ recipient.floor }} {{ recipient.side }}
+      </div>
+      <div class="postal-code">
+        {{ recipient.postalCode }} {{ recipient.city }}
+      </div>
+    </div>
+
+    <div class="header">
+      Kære {{ recipient.name }}
+    </div>
+
+    <div class="message">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam erat faucibus volutpat porttitor. Phasellus vitae bibendum urna.</p>
+      <p>Nam et leo rhoncus, facilisis neque non, malesuada nisl. Aliquam placerat, odio a vehicula placerat, leo risus condimentum mi, nec aliquet tellus odio a est.</p>
+      <p>Sed gravida nec tortor sit amet rutrum. Morbi non erat ac lectus efficitur gravida id vel nibh. In nec nisl at mi finibus venenatis.</p>
+    </div>
+
+    <div class="table">
+      <div class="table-header">
+        Data fra formular
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Navn på input</th>
+            <th>Data fra input</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for element in elements %}
+          <tr class="table-row">
+            <td>{{ element.name }}</td>
+            <td>{{ element.value }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+
+    </div>
+
+  </body>
+</html>
