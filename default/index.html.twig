@@ -1,0 +1,70 @@
+<html>
+  <body>
+    <div class="letterhead">
+      <div class="logo-wrapper">
+        <img class="logo" src="{{ logo }}"/>
+      </div>
+      <div class="sender-wrapper">
+        <div class="sender">
+          <div class="name">
+            Aarhus Kommune
+          </div>
+          <div class="address">
+            Hack Kampmanns Plads 2
+          </div>
+          <div class="postal-code">
+            8000 Aarhus C
+          </div>
+          <div class="phone">
+            89 40 20 00
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="recipient">
+      <div class="name">
+          {{ recipient.name }}
+      </div>
+      <div class="address">
+          {{ recipient.streetName }} {{ recipient.streetNumber }} {{ recipient.floor }} {{ recipient.side }}
+      </div>
+      <div class="postal-code">
+        {{ recipient.postalCode }} {{ recipient.city }}
+      </div>
+    </div>
+
+    <div class="header">
+      Kære {{ recipient.name }}
+    </div>
+    <div class="message">
+      <p>Tak for din besvarelse vedr. {{ label }}.</p>
+      <p>Vi har noteret dit nedenstående svar:</p>
+    </div>
+
+    <div class="table">
+      <div class="table-header">
+        Data fra formular
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Navn på input</th>
+            <th>Data fra input</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for element in elements %}
+          <tr class="table-row">
+            <td>{{ element.name }}</td>
+            <td>{{ element.value }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+
+    </div>
+
+  </body>
+</html>
